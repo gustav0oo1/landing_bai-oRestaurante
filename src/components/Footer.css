@@ -43,6 +43,13 @@
   gap: 2rem;
 }
 
+.unit-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end; /* Alinha os botões na parte inferior */
+}
+
 .unit-item h4 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
@@ -53,6 +60,7 @@
   opacity: 0.7;
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
+  flex-grow: 1; /* Faz o texto crescer para ocupar espaço disponível */
 }
 
 .map-link, .whatsapp-link {
@@ -86,6 +94,7 @@
   transition: all 0.3s ease;
   font-weight: 500;
   text-decoration: none;
+  display: inline-block;
 }
 
 .social-icon:hover {

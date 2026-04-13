@@ -39,6 +39,8 @@ const Footer = () => {
             <h3 className="footer-heading">Acompanhe</h3>
             <div className="social-links">
               <a href="https://www.instagram.com/baiaocozinhanordestina/" target="_blank" rel="noopener noreferrer" className="social-icon">Instagram</a>
+              <a href="https://www.tiktok.com/@baiaocozinha" target="_blank" rel="noopener noreferrer" className="social-icon">TikTok</a>
+              <a href="https://www.facebook.com/baiaocozinhanordestina/" target="_blank" rel="noopener noreferrer" className="social-icon">Facebook</a>
             </div>
           </div>
         </div>

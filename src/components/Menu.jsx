@@ -8,7 +8,7 @@ const Menu = () => {
         <h2 className="menu-title">Cardápio</h2>
         <div className="menu-locked">
           <h3>Contate o desenvolvedor para implementação</h3>
-          <p>Esta seção está temporariamente bloqueada aguardando implementação completa.</p>
+          <p>Esta seção está aguardando implementação completa.</p>
         </div>
       </div>
     </section>
