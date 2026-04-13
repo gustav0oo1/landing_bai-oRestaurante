@@ -48,11 +48,11 @@ const Header = () => {
   };
 
   return (
-    <header className={`main-header fade-in ${scrolled ? 'scrolled' : ''}`}>
+    <header className={`main-header fade-in ${scrolled ? 'scrolled' : ''} ${activeSection === 'hero' ? 'on-hero' : ''}`}>
       <div className="container">
         <div className="header-content">
           <a href="#hero" className="header-logo" style={{ textDecoration: 'none' }}>
-            BAIÃO <span style={{ color: '#E8B84B' }}>COZINHA NORDESTINA</span>
+            BAIÃO <span style={{ color: '#E8B84B' }}>COZINHA</span><br /><span style={{ color: '#E8B84B', display: 'block', marginTop: '-5px' }}>NORDESTINA</span>
           </a>
           <nav className="header-nav">
             <a href="#sobre" className={activeSection === 'sobre' ? 'active' : ''}>Sobre Nós</a>

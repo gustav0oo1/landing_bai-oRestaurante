@@ -55,6 +55,17 @@ a {
   width: 100%;
 }
 
+/* Espaço para elementos fixos no topo (como o header) */
+section {
+  scroll-margin-top: 80px; /* Espaço equivalente à altura do header */
+}
+
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 70px; /* Espaço reduzido em dispositivos móveis */
+  }
+}
+
 /* Responsividade geral */
 @media (max-width: 768px) {
   .container {

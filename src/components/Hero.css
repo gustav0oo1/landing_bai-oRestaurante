@@ -10,7 +10,9 @@
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  padding-top: 80px; /* Espaço para o header fixo */
   padding-bottom: 4rem;
+  margin-top: 0; /* Garantindo que não haja margem extra no topo */
 }
 
 /* Dual-layer gradient overlay — richer warmth on left column */
@@ -211,6 +213,55 @@
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    padding-top: 70px; /* Reduzindo o espaçamento em telas menores */
+  }
+
+  .hero-text {
+    max-width: 92vw;
+    padding: 100px 20px 48px;
+  }
+
+  .hero-title {
+    font-size: 3.2rem;
+    letter-spacing: -1px;
+  }
+
+  .hero-subtitle-high {
+    font-size: 1.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    text-align: center;
+    max-width: 200px;
+  }
+
+  .hero-stats {
+    display: none;
+  }
+
+  .hero-section::before {
+    background:
+      linear-gradient(to bottom,
+        rgba(0, 0, 0, 0.72) 0%,
+        rgba(0, 0, 0, 0.45) 40%,
+        rgba(0, 0, 0, 0.82) 100%);
+  }
+}
+
+@media (max-width: 768px) {
   .hero-text {
     max-width: 92vw;
     padding: 100px 20px 48px;
@@ -258,6 +309,7 @@
 @media (max-width: 480px) {
   .hero-section {
     min-height: 580px;
+    padding-top: 60px; /* Espaçamento adicional para celulares pequenos */
   }
 
   .hero-text {
